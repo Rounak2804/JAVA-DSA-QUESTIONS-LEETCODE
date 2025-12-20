@@ -2,7 +2,6 @@ import java.util.Arrays;
 class Solution {
     public int findGCD(int[] arr) {
         Arrays.sort(arr);
-        
         int n = arr.length;
         int small = arr[0];
         int largest = arr[n-1];
