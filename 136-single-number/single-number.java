@@ -1,12 +1,10 @@
-import java.util.Arrays;
 class Solution {
-    public int singleNumber(int[] arr) {
-        Arrays.sort(arr);
+    public int singleNumber(int[] nums) {
         int count = 0;
-        for(int i = 0;i<arr.length;i++){
-            count = count ^ arr[i];
-        }
-        return count;
-      
+        
+    for(int i = 0;i<nums.length;i++){
+            count =  nums[i]^count; 
+    }
+    return count;
     }
 }
