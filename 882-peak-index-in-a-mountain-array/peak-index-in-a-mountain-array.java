@@ -3,7 +3,7 @@ class Solution {
        int s = 0;
        int e = arr.length - 1;
     int p1 = 0;
-    int p2 = 0;
+    
        while(s<=e){
         int mid = (s+e)/2;
         if(arr[mid]<arr[mid+1]){
@@ -11,12 +11,12 @@ class Solution {
             s = mid + 1;
         }
         else if(arr[mid]>arr[mid+1]){
-            p2 = mid;
+            p1 = mid;
             e = mid -1;
         }
        }
 
-return p2;
+return p1;
 
     }
 }
