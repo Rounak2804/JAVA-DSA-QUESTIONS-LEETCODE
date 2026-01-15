@@ -15,8 +15,8 @@ class Solution {
             e = mid -1;
         }
        }
- s = Math.max(p1,p2);
-return s;
+
+return p1;
 
     }
 }
