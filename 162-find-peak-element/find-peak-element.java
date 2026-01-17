@@ -10,9 +10,9 @@ class Solution {
             } else {
                 start = mid + 1;
             }
-            if(start==end){
-                break;
-            }
+            // if(start==end){
+            //     break;
+            // }
         }
         return start;
     }
