@@ -7,10 +7,8 @@ class Solution {
         int f = First(arr , target , min);
         int s = Second(arr , target , min);
         
-        if(target == arr[min]){
-            return min;
-        }
-        else if(f==-1){
+       
+         if(f==-1){
             return s;
         }
         else{
@@ -40,7 +38,7 @@ class Solution {
 
     public int First(int arr[] , int target , int min){
             int l = 0;
-            int r = min;
+            int r = min - 1;
 
             while(l<=r){
                 int mid = (l + r)/2;
@@ -59,7 +57,7 @@ class Solution {
     }
 
     public int Second(int arr[] , int target , int min){
-            int l = min+1;
+            int l = min;
             int r = arr.length -1;
 
             while(l<=r){
