@@ -5,13 +5,13 @@ class Solution {
 
         int min  = Smallest(arr);
         int f = First(arr , target , min);
-        
+        int s = Second(arr , target , min);
         
         if(target == arr[min]){
             return min;
         }
         else if(f==-1){
-            return Second(arr , target , min);
+            return s;
         }
         else{
             return f;
