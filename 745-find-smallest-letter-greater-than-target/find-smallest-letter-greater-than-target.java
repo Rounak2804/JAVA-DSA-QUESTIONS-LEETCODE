@@ -10,7 +10,6 @@ class Solution {
                 res = arr[mid];
                 end = mid - 1;
             } else { 
-                
                 start = mid + 1;
             }
             
