@@ -10,7 +10,7 @@ class Solution {
             j++;
         }
         double max = sum;
-        double avg = 0;
+        
 
         while (j < arr.length) {
             sum = sum + arr[j];
