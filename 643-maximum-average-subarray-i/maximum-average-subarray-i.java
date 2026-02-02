@@ -16,7 +16,10 @@ class Solution {
             sum = sum + arr[j];
             sum = sum - arr[i];
 
-            max = Math.max(sum,max);
+            if (sum > max) {
+                max = sum;
+
+            }
             i++;
             j++;
 
