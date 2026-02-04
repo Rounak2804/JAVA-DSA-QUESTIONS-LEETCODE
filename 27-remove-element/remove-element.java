@@ -1,20 +1,27 @@
 class Solution {
     public int removeElement(int[] arr, int val) {
 
-       ArrayList<Integer> l = new ArrayList<>();
+       int i  = 0;
+       int j = arr.length - 1;
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != val) {
-                l.add(arr[i]);
-            }
-        }
+       while(i<=j){
+                    if(arr[i]==val && arr[j]!=val){
+                        arr[i] = arr[j];
+                        i++;
+                        j--;
+                    }
+                    else if(arr[i]==val && arr[j]==val){
+                        arr[i] = arr[j];
+                        j--;
+                    }
+                    else if(arr[i]!=val){
+                        i++;
+                    } 
+                  
 
-        
-        for (int i = 0; i < l.size(); i++) {
-            arr[i] = l.get(i);
-        }
 
-        return l.size();
+       }
+       return i;
 
     }
 
