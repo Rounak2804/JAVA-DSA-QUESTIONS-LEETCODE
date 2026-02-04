@@ -1,7 +1,7 @@
 class Solution {
     public int countPairs(List<Integer> l, int t) {
-        //interviewer bolta hai optimize kar lohre 
-        int count = 0;
+        
+             int count = 0;
         for (int i = 0; i < l.size(); i++) {
             int curr = l.get(i);
             for (int j = i + 1; j < l.size(); j++) {
@@ -13,5 +13,6 @@ class Solution {
         }
 
         return count;
+        
     }
 }
