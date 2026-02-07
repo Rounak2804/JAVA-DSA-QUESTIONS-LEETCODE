@@ -13,13 +13,13 @@ class Solution {
             }
 
         }
-
-        for (int key : map.keySet()) {
-            if (map.get(key) > n / 3) {
-                l.add(key);
+            // Using Entry Set
+        Set<Map.Entry<Integer , Integer>> entries = map.entrySet();
+        for(Map.Entry<Integer , Integer> entry : entries){
+            if(entry.getValue() > n/3){
+                l.add(entry.getKey());
             }
         }
-
         return l;
     }
 }
