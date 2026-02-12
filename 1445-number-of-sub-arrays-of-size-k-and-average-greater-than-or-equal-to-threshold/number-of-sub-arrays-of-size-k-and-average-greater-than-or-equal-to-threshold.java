@@ -9,8 +9,8 @@ class Solution {
         }
 
         int max = 0;
-        int avg1 = sum1 / k;
-        if (avg1 >= thres) {
+        
+        if (sum1/k >= thres) {
             max += 1;
         }
 
@@ -18,11 +18,11 @@ class Solution {
         // and i is at i=0 position 
 
         while (j < arr.length) {
-            sum1 = sum1 + arr[j];
-            sum1 = sum1 - arr[i];
+            sum1 = sum1 + arr[j]; // add next element
+            sum1 = sum1 - arr[i]; // delete previous elememnt
 
-            int avg = sum1 / k;
-            if (avg >= thres) {
+            
+            if (sum1/k >= thres) {
                 max++;
             }
 
